@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>🎵 Music Dashboard</h1>
+        </header>
+        
+        <div class="player">
+            <img id="album-art" src="week2/song.jpg" alt="Album Art">
+            <h2 id="song-title">KOYI NA KOYI CHAHIYE</h2>
+            <h3 id="artist-name">Kumar sanu</h3>
+            
+            <div class="controls">
+                <button id="prev-btn">⏮️</button>
+                <button id="play-btn">▶️</button>
+                <button id="next-btn">⏭️</button>
+            </div>
+            
+            <div class="progress">
+                <input type="range" id="progress-bar" value="0">
+                <span id="current-time">0:00</span> / <span id="total-time">3:30</span>
+            </div>
+        </div>
+        
+        <section class="playlist">
+            <h2>Playlist</h2>
+            <ul id="playlist-container">
+                <!-- Songs will be dynamically added here -->
+            </ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
